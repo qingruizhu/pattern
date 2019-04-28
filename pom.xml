@@ -9,17 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>singleton</module>
-        <module>factory</module>
-        <module>prototype</module>
-        <module>proxy</module>
-        <module>delegate</module>
-        <module>test</module>
-        <module>test</module>
-        <module>delegate</module>
-        <module>strategy</module>
-        <module>strategy</module>
-        <module>strategy</module>
+        <module>01_factory</module>
+        <module>02_singleton</module>
+        <module>03_prototype</module>
+        <module>04_proxy</module>
+        <module>05_delegate</module>
+        <module>06_strategy</module>
+        <module>07_template</module>
     </modules>
 
 
