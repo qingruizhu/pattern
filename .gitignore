@@ -5,3 +5,7 @@
 /singleton/target/
 /proxy/target/
 /delegate/target/
+/classes/
+/08_adpater/target/
+/09_decorator/target/
+/10_observer/target/
