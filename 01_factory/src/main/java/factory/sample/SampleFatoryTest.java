@@ -9,7 +9,7 @@ public class SampleFatoryTest {
         ICourse course = SampleFactory.create("java");
         course.record();
 
-        ICourse byClassName = SampleFactory.createByClassName("");
+        ICourse byClassName = SampleFactory.createByClassName("factory.product.course.PythonCourse");
         byClassName.record();
 
         ICourse byClass = SampleFactory.createByClass(JavaCourse.class);

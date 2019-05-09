@@ -32,6 +32,9 @@ public class BrokeLazyInnerClassSingleton {
         System.out.println(obj2);
     }
 
+    /**
+     *  通过反序列化破坏单例模式
+     **/
     private static void brokeBySerializable(){
         HungrySingleton obj1 = HungrySingleton.getInstance();
         System.out.println(obj1);

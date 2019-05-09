@@ -21,6 +21,12 @@ public class ThreadLocalTest {
                     System.out.println(Thread.currentThread().getName()+":end run.......");
                 }
             }.start();
+            try {
+                Thread.sleep(1000);
+            } catch (Exception e) {
+                e.fillInStackTrace();
+            }
+
         }
 
     }
