@@ -1,5 +1,10 @@
 package factory.abs;
 
+/**
+ * 抽象工厂：
+ *
+ *
+ */
 public class AbstractFactoryTest {
 
     public static void main(String[] args) {

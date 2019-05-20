@@ -33,6 +33,9 @@ public class BrokeEnumSingletonTest {
         System.out.println(obj2);
     }
 
+    /**
+     * 通过反序列化破坏单例模式
+      */
     private static void brokeBySerializable(){
         EnumSingle obj1 = EnumSingle.getInstance();
         obj1.setData(new Object());
@@ -48,7 +51,7 @@ public class BrokeEnumSingletonTest {
 
             FileInputStream fis = new FileInputStream("EnumSingle.obj");
             ObjectInputStream ois = new ObjectInputStream(fis);
-            //重写readResolve()
+            //重写readResolve()，可防止单例模式被破坏
             obj2 = (EnumSingle)ois.readObject();
             ois.close();
             fis.close();

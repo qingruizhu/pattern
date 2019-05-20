@@ -20,7 +20,7 @@ public class SunWuKong extends Monkey implements Cloneable,Serializable{
     }
 
     /**
-     * 重写克隆方法，调用自己的深克隆
+     * 重写克隆方法，调用自己的深克隆：序列化反序列化方式
      * @return
      */
     @Override

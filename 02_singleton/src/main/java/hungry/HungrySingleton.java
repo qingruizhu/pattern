@@ -22,7 +22,7 @@ public class HungrySingleton implements Serializable {
     }
 
     /**
-     * 阻止，反序列化时破坏单例模式
+     * 2.重写readResolv(),可阻止，反序列化时破坏单例模式
      * @return
      */
     private Object readResolve(){
