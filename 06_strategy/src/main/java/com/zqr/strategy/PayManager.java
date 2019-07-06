@@ -5,6 +5,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import static com.zqr.strategy.PayManager.Payment.*;
 
+/**
+ * 策略结合工厂模式，对不同的支付策略进行管理
+ */
 public class PayManager {
         private static Map<String,IPay> manager = new ConcurrentHashMap<String, IPay>();
         static {
@@ -13,7 +16,6 @@ public class PayManager {
             manager.put(PAY_WECHAT,new WechatPay());
             manager.put(PAY_DEFAULT,new ALiPay());
         }
-
         public static IPay getPayMent(String payKey){
             if (manager.containsKey(payKey)){
                 return manager.get(payKey);

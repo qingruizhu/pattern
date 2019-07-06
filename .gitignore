@@ -6,8 +6,13 @@
 /proxy/target/
 /delegate/target/
 /classes/
+/01_factory/target/
+/02_singleton/target/
+/03_prototype/target/
+/04_proxy/target/
+/05_delegate/target/
+/06_strategy/target/
+/07_template/target/
 /08_adpater/target/
 /09_decorator/target/
 /10_observer/target/
-/01_factory/target/
-/02_singleton/target/

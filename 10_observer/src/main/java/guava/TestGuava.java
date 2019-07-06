@@ -9,9 +9,14 @@ import com.google.common.eventbus.EventBus;
  */
 public class TestGuava {
     public static void main(String[] args) {
-        GuaEvent guaEvent = new GuaEvent();
+
         EventBus eventBus = new EventBus();
+
+        GuaEvent guaEvent = new GuaEvent();
+
         eventBus.register(guaEvent);
-        eventBus.post("zhuqingrui");
+
+        eventBus.post("哈哈哈哈哈");
+
     }
 }

@@ -7,12 +7,13 @@ package weather;
  */
 public class Test {
     public static void main(String[] args) {
-        Weather weather = new Weather(new WeatherModel(400,"打雷啦，劈人啦"));
+        Weather weather = new Weather();
+        //设置天气
+        weather.setModel(new WeatherModel(200,"哎吆，天气不错哦"));
+        //添加地区
         weather.addObserver(new NorthUser());
         weather.addObserver(new SourthUser());
-        weather.adviseAll();
-        //更换天气
-        weather.setModel(new WeatherModel(200,"哎吆，天气不错哦"));
+        //播报天气预报
         weather.adviseAll();
     }
 }

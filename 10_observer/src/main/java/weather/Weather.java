@@ -13,6 +13,9 @@ public class Weather {
     List<IUser> observers = null;
     private WeatherModel model;
 
+    public Weather() {
+    }
+
     public Weather(WeatherModel model) {
         this.model = model;
     }
